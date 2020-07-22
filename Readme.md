@@ -15,3 +15,15 @@ For ARM
 ```console
 $ CC=arm-linux-gnueabihf-gcc make all
 ```
+
+## Using meson
+
+Default
+```console
+$ meson build && ninja -C build
+```
+
+For ARM
+```console
+$ meson --cross-file cross.ini build && ninja -C build
+```
