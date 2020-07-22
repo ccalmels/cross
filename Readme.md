@@ -27,3 +27,16 @@ For ARM
 ```console
 $ meson --cross-file cross.ini build && ninja -C build
 ```
+
+## Using Rust
+
+Default
+```console
+$ cargo build
+```
+
+For ARM
+```console
+$ rustup target add armv7-unknown-linux-gnueabihf
+$ cargo build --target=armv7-unknown-linux-gnueabihf
+```
